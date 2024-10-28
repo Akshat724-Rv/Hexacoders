@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Oasis and Herbal Garden</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Verdana', sans-serif;
+            color: #2b2b2b;
+            margin: 0;
+            background-color: #f0f8f5;
+        }
+        h1, h2 {
+            color: #2a7b55;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #e5f7e1;
+            border: 2px solid #c5e1c3;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.2);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 6px;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        .card h3 {
+            color: #2a7b55;
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 1em;
+            color: #4a4a4a;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2a7b55;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        footer h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        footer p {
+            font-size: 1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ayush Oasis and Herbal Garden</h1>
+    <h2>Explore the Benefits of Herbal and AYUSH Plants</h2>
+
+    <div class="card-container">
+        <!-- Herbal Plant Card -->
+        <div class="card">
+            <img src="tulsi.jpeg" alt="Tulsi Plant">
+            <h3>Tulsi (Holy Basil)</h3>
+            <p><strong>Uses:</strong> Known for boosting immunity, reducing stress, and aiding digestion.</p>
+            <p><strong>Merits:</strong> Natural antioxidant, helps fight respiratory infections and provides anti-inflammatory effects.</p>
+        </div>
+
+        <!-- AYUSH Plant Card -->
+        <div class="card">
+            <img src="ashwaganda.jpeg" alt="Ashwagandha Plant">
+            <h3>Ashwagandha</h3>
+            <p><strong>Uses:</strong> Commonly used to reduce stress, improve sleep, and boost overall vitality.</p>
+            <p><strong>Merits:</strong> Known as an adaptogen that helps the body resist physical and mental stress.</p>
+        </div>
+
+        <!-- Additional Herbal Plant Card -->
+        <div class="card">
+            <img src="neem.jpeg" alt="Neem Plant">
+            <h3>Neem</h3>
+            <p><strong>Uses:</strong> Used for skin health, immune support, and oral hygiene.</p>
+            <p><strong>Merits:</strong> Antibacterial, antifungal, and anti-inflammatory properties make it a versatile herb.</p>
+        </div>
+
+        <!-- Additional AYUSH Plant Card -->
+        <div class="card">
+            <img src="amla.jpeg" alt="Amla Plant">
+            <h3>Amla (Indian Gooseberry)</h3>
+            <p><strong>Uses:</strong> Enhances immunity, promotes digestion, and supports heart health.</p>
+            <p><strong>Merits:</strong> Rich in Vitamin C and antioxidants, supports eye health and rejuvenates cells.</p>
+        </div>
+
+        <!-- More Plant Cards -->
+        <div class="card">
+            <img src="aloevera.jpeg" alt="Aloe Vera Plant">
+            <h3>Aloe Vera</h3>
+            <p><strong>Uses:</strong> Commonly used for skin care, digestive health, and wound healing.</p>
+            <p><strong>Merits:</strong> Soothes burns, hydrates skin, and promotes gut health.</p>
+        </div>
+
+        <div class="card">
+            <img src="bramhi.jpeg" alt="Brahmi Plant">
+            <h3>Brahmi</h3>
+            <p><strong>Uses:</strong> Enhances memory, reduces anxiety, and improves cognitive functions.</p>
+            <p><strong>Merits:</strong> Supports brain health and has neuroprotective properties.</p>
+        </div>
+
+        <div class="card">
+            <img src="turmeric.jpeg" alt="Turmeric Plant">
+            <h3>Turmeric</h3>
+            <p><strong>Uses:</strong> Known for anti-inflammatory and antioxidant benefits.</p>
+            <p><strong>Merits:</strong> Supports joint health, improves skin, and boosts immunity.</p>
+        </div>
+
+        <div class="card">
+            <img src="ginger.jpeg" alt="Ginger Plant">
+            <h3>Ginger</h3>
+            <p><strong>Uses:</strong> Used for digestive health, nausea relief, and anti-inflammatory benefits.</p>
+            <p><strong>Merits:</strong> Eases digestive discomfort, reduces inflammation, and enhances immunity.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>About Us</h2>
+        <p>Ayush Oasis and Herbal Garden is dedicated to promoting holistic health and wellness through the rich tradition of herbal and AYUSH plants. We are committed to educating people about the benefits of natural remedies that have been used for centuries in traditional medicine. Join us on a journey toward health and harmony with nature.</p>
+    </footer>
+</body>
+</html>
