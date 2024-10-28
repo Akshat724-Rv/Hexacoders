@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden - Sign Up</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6FB98F, #A1E3B0);
+}
+
+.signup-container {
+    background-color: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #4A7856;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #6F8E73;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: #4A7856;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input:focus, form select:focus {
+    border-color: #6FB98F;
+    outline: none;
+}
+
+.signup-button {
+    width: 100%;
+    background-color: #4A7856;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #3d6347;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Virtual Herbal Garden</h2>
+    <p>Sign up to start exploring the herbal world!</p>
+    <form action="#" method="POST">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit" class="signup-button">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>
