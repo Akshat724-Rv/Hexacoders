@@ -1,0 +1,17 @@
+#voice-btn {
+  padding: 13px 20px;
+  background-color: #55d531;
+  color: rgba(0, 0, 0, 0.742);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+  
