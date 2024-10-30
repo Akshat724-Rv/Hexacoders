@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Oasis - Herbal Wellness</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#voice-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #results {
+    margin-top: 20px;
+    padding: 10px;
+  }
+body {
+    background-color: #F3F9F1;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4A7856;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main {
+    background-color: #E2F1E4;
+    padding: 60px 20px;
+}
+
+h1 {
+    color: #4A7856;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #4A7856;
+    margin-bottom: 10px;
+}
+
+.issue-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.issue-section h3 {
+    color: #4A7856;
+}
+
+footer {
+    background-color: #4A7856;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}    
+     /* Search bar container */
+     .search-container {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Search input styling */
+        .search-container input[type="text"] {
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            width: 200px;
+            transition: width 0.3s ease;
+            border-radius: 0;
+        }
+
+        /* Search button styling */
+        .search-container button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover and focus effects */
+        .search-container:hover,
+        .search-container:focus-within {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container input[type="text"]:focus {
+            width: 250px;
+        }
+
+        .search-container button:hover {
+            background-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #6b8e23;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Sections styling */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #6b8e23;
+        }
+
+        /* Flexbox layout for interactive elements */
+        .impacts, .results, .interactive-features {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .impact-item, .result-item, .feature-item {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .impact-item:hover, .result-item:hover, .feature-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Interactive garden area placeholder */
+        .garden-area {
+            background-color: #e0ffe0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px dashed #6b8e23;
+        }
+        .gardenimage{
+            height: 10cm;
+            width: 20cm;
+            border-radius: 15px;
+            border: 2px solid yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Ayush Oasis</div>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button>🔍</button>
+    </div>
+    <button id="voice-btn"><b>Speak to Search</b></button>
+    <div id="results"></div>
+</div>
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="herbalplants and benifits.html">Herbal Plants</a></li>
+        <li><a href="health issue.html">Health Issues</a></li>
+        <li><a href="login.html">Login </a></li>
+        <li><a href="signup.html">Sign UP</a></li>
+    </ul>
+</nav>
+
+<!-- Main Section -->
+<section id="main">
+    <h1>Welcome to Ayush Oasis</h1>
+    <p>Your gateway to natural healing and wellness. Discover the power of herbal plants, the essence of Ayurveda, and the practice of Yoga to rejuvenate your mind, body, and soul.</p>
+</section>
+
+
+<div class="container">
+
+    <!-- Virtual Herbal Garden Section -->
+    <section class="section garden-area">
+        <h2>Virtual Herbal Garden</h2>
+        <p>Navigate an interactive garden environment where each plant is showcased with descriptions, traditional uses, and health benefits.</p>
+        <!-- Placeholder for interactive garden or AR experience -->
+        <p><img src="garden.jpeg" alt="garden area" class="gardenimage"></p>
+    </section>
+
+    <!-- Impacts of Ayush Oasis Section -->
+    <section class="section impacts">
+        <h2>Impacts of Ayush Oasis</h2>
+        <div class="impact-item">
+            <h3>Educational Impact</h3>
+            <p>Interactive Learning: Engaging formats like quizzes and videos can enhance knowledge retention.</p>
+        </div>
+        <div class="impact-item">
+            <h3>Data Collection and Research</h3>
+            <p>Contributions to Herbal Research: Collecting data on user interactions to contribute to research on herbal medicine.</p>
+        </div>
+        <div class="impact-item">
+            <h3>Health and Wellness</h3>
+            <p>Increased awareness of natural remedies may reduce reliance on pharmaceuticals.</p>
+        </div>
+        <div class="impact-item">
+            <h3>Technological Innovation</h3>
+            <p>Cutting-edge web technologies enhance user engagement and set benchmarks for future educational platforms.</p>
+        </div>
+        <div class="impact-item">
+            <h3>Cultural and Historical Awareness</h3>
+            <p>Showcasing traditional uses of herbs, respecting indigenous knowledge and practices.</p>
+        </div>
+    </section>
+
+    <!-- Results of Ayush Oasis Section -->
+    <section class="section results">
+        <h2>Results of Ayush Oasis</h2>
+        <div class="result-item">
+            <h3>Interactive Elements</h3>
+            <p>Gamification: Implement quizzes or challenges related to herbal knowledge to engage users.</p>
+        </div>
+        <div class="result-item">
+            <h3>AR/VR Integration</h3>
+            <p>Use AR.js or WebXR for augmented reality experiences, allowing users to interact with herbs in their own space.</p>
+        </div>
+        <div class="result-item">
+            <h3>Analytics and Feedback</h3>
+            <p>Track user engagement with tools like Google Analytics to improve the user experience.</p>
+        </div>
+        <div class="result-item">
+            <h3>SEO and Marketing</h3>
+            <p>Optimize content for search engines and enable easy sharing on social media platforms like Instagram and Facebook.</p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>Connect with us:</p>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="#about">About Us</a>
+</footer>
+<script>
+    const voiceBtn = document.getElementById('voice-btn');
+const resultsDiv = document.getElementById('results');
+
+voiceBtn.addEventListener('click', () => {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    resultsDiv.textContent = `You said: ${transcript}`;
+
+    // Send the transcript to your search engine or NLP backend
+    fetch('/search', {
+      method: 'POST',
+      body: JSON.stringify({ query: transcript })
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle the search results
+      resultsDiv.textContent = data.results;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      resultsDiv.textContent = 'An error occurred';
+    });
+  };
+
+  recognition.start();
+});
+</script>
+</body>
+</html>
