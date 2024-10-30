@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Oasis - Herbal Garden</title>
+    <style>
+        /* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.body{
+    background-color: #4CAF50;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* Header and Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover a,
+.dropdown:hover .dropdown-content {
+    background-color: #45a049;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: white;
+}
+
+/* Main Section */
+#main {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+
+}
+
+#main h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.logo1{
+    height: 120px;
+    width: 250%;
+    background-size: cover;
+   border: 2px solid yellowgreen;
+   border-radius: 15%;
+   margin: 2px;
+   
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-about, .footer-follow {
+    width: 45%;
+}
+
+footer h3 {
+    font-size: 18px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .footer-about, .footer-follow {
+        width: 100%;
+    }
+}
+.neeche{
+    margin-top: 50px;
+}
+.btn{
+    background-color: yellowgreen;
+    color: black;
+    text-transform: capitalize;
+    margin: 2px;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid green;
+}
+.buttn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+.elfsight-app-2e5fb31f-d7fc-4f95-a9ed-3c3be5ab0a33{
+   text-align: right;
+   margin-right: 50px;
+}
+.photo-container {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Keep a square shape */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image fits within the container */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for a floating effect */
+    border: 5px solid #f0f0f0; /* Optional: adds a subtle border around the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+  }
+
+  /* Image inside the container */
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  }
+  .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hover effect */
+  .photo-container:hover {
+    transform: scale(1.05); /* Slightly enlarges the container */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Darkens the shadow on hover */
+  }
+  /* CSS for the button */
+
+.fancy-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  outline: none;
+}
+.fancy-button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.fancy-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+/* Footer styling */
+.footer {
+  background-color: #4a7c59;
+  color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #d7e3d4;
+}
+
+.footer-section p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.85em;
+  color: #d7e3d4;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+    </style>
+</head>
+<body class="body">
+
+    <!-- Header and Navbar -->
+    <header>
+        <div class="logo">Ayush Oasis</div>
+        <div class="logo"><img src="logonew.jpeg" alt="" class="logo1"></div>
+        <nav>
+            <ul>
+                <li><a href="frontpage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#about">plants</a>
+                    <ul class="dropdown-content">
+                        <li><a href="front ka herbal.html">Herbal Plants</a></li>
+                    </ul>
+                </li>
+                <li><a href="yoga.html">Immiunity and health & yoga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="main">
+        <h1>Welcome to Ayush Oasis</h1>
+        <p>Your one-stop destination for natural herbal plants and Ayurvedic wisdom.</p>
+    </section>
+<section>
+    <div class="buttn">
+        <button class="fancy-button"><a href="herbal 2.html">Click Me</a></button>
+    </div>
+</section>    
+<div class="photo">
+<!-- Photo container -->
+<div class="photo-container">
+    <img src="logo.jpeg" alt="Sample Photo">
+  </div>
+</div>
+  
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-2e5fb31f-d7fc-4f95-a9ed-3c3be5ab0a33" data-elfsight-app-lazy></div>
+    </script>
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Uses of Herbal Gardens</h3>
+        <p>Herbal gardens provide fresh herbs for culinary uses, medicinal preparations, natural remedies, and essential oils. They offer an easy way to grow and access natural ingredients that support a healthier lifestyle.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Profit & Income Potential</h3>
+        <p>Herbal gardening can be profitable by selling fresh or dried herbs, creating homemade products like teas, tinctures, and salves, or offering guided tours and workshops, creating an extra income stream.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Benefits of Herbal Gardening</h3>
+        <p>Herbal gardening is beneficial for both health and the environment. It promotes biodiversity, enhances mental well-being, reduces stress, and provides a sustainable way to grow essential plants at home.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Merits of Herbal Plants</h3>
+        <p>Herbal plants are known for their various healing properties, ability to treat ailments naturally, and their role in traditional medicine. They also support pollinators and contribute to ecological balance.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Herbal Garden. Thankyou for visit our website.</p>
+    </div>
+  </footer><script href="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Plants and Their Benefits</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .card img {
+        height: 150px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Herbal Plants and Their Benefits</h1>
+        <p>Discover the natural healing power of herbs!</p>
+    </header>
+
+    <section class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="aloe.jpeg" alt="Aloe Vera">
+            <div class="card-content">
+                <h2>Aloe Vera</h2>
+                <p>Aloe Vera is known for its soothing properties, great for skin care, and promotes healing of cuts and burns.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="holy basil.jpeg" alt="Tulsi">
+            <div class="card-content">
+                <h2>Tulsi (Holy Basil)</h2>
+                <p>Tulsi helps boost immunity, reduces stress, and supports respiratory health.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="mint.jpeg" alt="Mint">
+            <div class="card-content">
+                <h2>Mint</h2>
+                <p>Mint is refreshing, aids digestion, and helps relieve headaches.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="ginger2.jpeg" alt="Ginger">
+            <div class="card-content">
+                <h2>Ginger</h2>
+                <p>Ginger is effective against nausea, fights infections, and reduces inflammation.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

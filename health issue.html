@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Garden | Health Issues</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --main-green: #2e8b57;
+    --secondary-green: #6fa97c;
+    --light-green: #d3f2e4;
+    --text-color: #333;
+    --white: #fff;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-green);
+    color: var(--text-color);
+}
+
+/* Navbar */
+nav {
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--main-green);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.health{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-green);
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+.health-section {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+.img img{
+    height: 50px;
+    width: 70px;
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+}
+.health-section h2 {
+    color: var(--main-green);
+}
+
+.health-section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-green);
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .health-section {
+        padding: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Herbal Garden
+        </div>
+        <div class="img"><img src="logo.jpeg" alt="logo"></div>
+        <div class="health">Health Solutions </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="eyes" class="health-section">
+            <h2>Eye Health</h2>
+            <img src="eye.jpeg" alt="Eye Health">
+            <p><strong>Problem:</strong> Common eye issues include dryness, strain, and irritation from long screen exposure.</p>
+            <p><strong>Solution:</strong> Regular eye exercises, reduced screen time, and herbal remedies like cucumber slices or aloe vera help refresh and protect the eyes.</p>
+        </section>
+
+        <section id="skin" class="health-section">
+            <h2>Skin Health</h2>
+            <img src="skin.png" alt="Skin Health">
+            <p><strong>Problem:</strong> Skin problems include dryness, acne, and aging due to pollution and UV exposure.</p>
+            <p><strong>Solution:</strong> Natural masks with turmeric and aloe vera, daily hydration, and sun protection improve skin health.</p>
+        </section>
+
+        <section id="hair" class="health-section">
+            <h2>Hair Health</h2>
+            <img src="hair.jpeg" alt="Hair Health">
+            <p><strong>Problem:</strong> Hair issues like dryness, split ends, and hair loss are common due to harsh chemicals and pollution.</p>
+            <p><strong>Solution:</strong> Regular oiling, avoiding heat tools, and using herbal remedies like hibiscus and coconut oil help maintain strong and shiny hair.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Herbal Garden. All rights reserved.</p>
+    </footer>
+</body>
+</html>
