@@ -7,13 +7,19 @@
     <style>
         /* Basic Styling */
 * {
+    background-image: url(mainpic2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% 100% 100%;
     margin: 0;
     padding: 0;
     box-sizing:content-box;
     font-family: Arial, sans-serif;
+    color: black;
 }
 .body{
     background-color: #2bdbdb;
+    
     height: 110vh;
     width: 100%;
 }
@@ -41,6 +47,7 @@ nav ul {
 
 nav ul li {
     position: relative;
+    color: white;
 }
 
 nav ul li a {
@@ -225,19 +232,25 @@ footer p {
 .fancy-button {
   background: linear-gradient(135deg, #e2f50c, #d9ec0b);
   color:whitesmoke ;
+  background-color: yellow;
   padding: 15px 30px;
   font-size: 19px;
   font-weight: bold;
   border: none;
   border-radius:25px;
+  background-color: yellow;
+  display: inline-block;
   cursor: pointer;
   margin: 20px;
   box-shadow: 0 8px 15px rgba(71, 199, 76, 0.2);
   transition: all 0.3s ease;
   outline: none;
+  overflow: hidden;
+
 }
 .fancy-button a{
-    color: rgb(12, 12, 173);
+    color: rgb(12, 12, 173
+    );
     text-decoration: none;
 }
 
@@ -250,7 +263,7 @@ footer p {
 /* Footer styling */
 .footer {
   background-color: #226705;
-  color: #f4f4f4;
+  color: black;
   padding: 40px 20px;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -273,7 +286,7 @@ footer p {
 .footer-section h3 {
   font-size: 1.4em;
   margin-bottom: 10px;
-  color: #d7e3d4;
+  color: black;
 }
 
 .footer-section p {
@@ -285,15 +298,23 @@ footer p {
   margin-top: 30px;
   font-size: 0.85em;
   color: #d7e3d4;
+  display: flex;
+  display: inline;
+  text-align: center;
+  align-items: center;
+  margin-left: 350px;
+
 }
 
 .footer-bottom p {
   margin: 0;
 }
-
+.weather{
+    background-color:px;
+}
     </style>
 </head>
-<body class="body">
+<body class="body" id="mainbody">
 
     <!-- Header and Navbar -->
     <header>
@@ -329,10 +350,10 @@ footer p {
     <img src="bn3mr9bg(1).png" alt="Sample Photo">
   </div>
 </div>
-  
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="weather">  
+<script src="https://static.elfsight.com/platform/platform.js " async></script>
 <div class="elfsight-app-2e5fb31f-d7fc-4f95-a9ed-3c3be5ab0a33" data-elfsight-app-lazy></div>
-    </script>
+</div>
    <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
@@ -356,9 +377,11 @@ footer p {
         <p>Herbal plants are known for their various healing properties, ability to treat ailments naturally, and their role in traditional medicine. They also support pollinators and contribute to ecological balance.</p>
       </div>
     </div>
+  </footer>
+ <footer>
     <div class="footer-bottom">
-      <p>&copy; 2024 Herbal Garden. Thankyou for visit Ayush Oasis</p>
-    </div>
-  </footer><script href="main.js"></script>
+        <p style="color: black; font-size: 1.0rem;">&copy; 2024 Herbal Garden. Thankyou for visit Ayush Oasis</p>
+      </div>
+ </footer> <script href="main.js"></script>
 </body>
 </html>
